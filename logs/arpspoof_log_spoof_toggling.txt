@@ -1,0 +1,144 @@
+[2021-04-15 13:33:52,144] [DEBUG] arpspoof: Using interface eth0
+[2021-04-15 13:34:00,081] [DEBUG] arpspoof: 08:00:27:33:ce:25 -> ff:ff:ff:ff:ff:ff: Who has 192.168.1.3? Tell 192.168.1.2 (08:00:27:33:ce:25).
+[2021-04-15 13:34:00,082] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr None (got 08:00:27:33:ce:25), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 00:00:00:00:00:00)
+[2021-04-15 13:34:00,083] [DEBUG] arpspoof: Tracking new session ('08:00:27:33:ce:25', '192.168.1.2', '192.168.1.3').
+[2021-04-15 13:34:00,084] [DEBUG] arpspoof: Tracked.
+[2021-04-15 13:34:00,086] [DEBUG] arpspoof: 08:00:27:33:ce:25 <- 08:00:27:42:00:6f: Reply to 192.168.1.2 (08:00:27:33:ce:25): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:34:00,087] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.2 has known hwaddr None (got 08:00:27:33:ce:25)
+[2021-04-15 13:34:00,087] [DEBUG] arpspoof: Full cycle detected.
+[2021-04-15 13:34:02,088] [DEBUG] arpspoof: ARP session time out. Testing initiator 192.168.1.2 (08:00:27:33:ce:25).
+[2021-04-15 13:34:02,089] [DEBUG] arpspoof: add_ping_job(): Dispatching task ('08:00:27:33:ce:25', '192.168.1.2', 'new_arp_source')
+[2021-04-15 13:34:02,095] [DEBUG] arpspoof: Full cycle. Testing responder 192.168.1.3 (08:00:27:42:00:6f).
+[2021-04-15 13:34:02,096] [DEBUG] arpspoof: add_ping_job(): Dispatching task ('08:00:27:42:00:6f', '192.168.1.3', 'new_arp_source')
+[2021-04-15 13:34:02,102] [DEBUG] arpspoof: Skipping trusted host 192.168.1.3 (08:00:27:42:00:6f)
+[2021-04-15 13:34:02,103] [DEBUG] arpspoof: on_detect_new_arp_source(): Cleaning up task ('08:00:27:42:00:6f', '192.168.1.3', 'new_arp_source')
+[2021-04-15 13:34:02,115] [INFO] arpspoof: Adding 192.168.1.2 (08:00:27:33:ce:25) to trusted ARP table.
+[2021-04-15 13:34:02,115] [DEBUG] arpspoof: on_detect_new_arp_source(): Cleaning up task ('08:00:27:33:ce:25', '192.168.1.2', 'new_arp_source')
+[2021-04-15 13:34:05,096] [DEBUG] arpspoof: 08:00:27:42:00:6f -> 08:00:27:33:ce:25: Who has 192.168.1.2? Tell 192.168.1.3 (08:00:27:42:00:6f).
+[2021-04-15 13:34:05,097] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 00:00:00:00:00:00)
+[2021-04-15 13:34:05,097] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:34:05,099] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:33:ce:25: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:34:05,100] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:33:ce:25), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:34:05,100] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:34:21,247] [DEBUG] arpspoof: 08:00:27:33:ce:25 -> ff:ff:ff:ff:ff:ff: Who has 192.168.1.1? Tell 192.168.1.2 (08:00:27:33:ce:25).
+[2021-04-15 13:34:21,247] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:33:ce:25), dest 192.168.1.1 has known hwaddr None (got 00:00:00:00:00:00)
+[2021-04-15 13:34:21,248] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:35:05,066] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:35:05,066] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:35:05,067] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:35:06,076] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:35:06,077] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:35:06,077] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:35:07,086] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:35:07,087] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:35:07,087] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:35:08,097] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:35:08,097] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:35:08,097] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:35:09,113] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:35:09,114] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:35:09,114] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:35:10,308] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 -> 08:00:27:42:00:6f: Who has 192.168.1.3? Tell 192.168.1.1 (08:00:27:a1:b6:e6).
+[2021-04-15 13:35:10,309] [DEBUG] arpspoof: Source 192.168.1.1 has known hwaddr None (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 00:00:00:00:00:00)
+[2021-04-15 13:35:10,309] [DEBUG] arpspoof: Tracking new session ('08:00:27:a1:b6:e6', '192.168.1.1', '192.168.1.3').
+[2021-04-15 13:35:10,309] [DEBUG] arpspoof: Tracked.
+[2021-04-15 13:35:10,310] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 <- 08:00:27:42:00:6f: Reply to 192.168.1.1 (08:00:27:a1:b6:e6): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:35:10,311] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.1 has known hwaddr None (got 08:00:27:a1:b6:e6)
+[2021-04-15 13:35:10,311] [DEBUG] arpspoof: Full cycle detected.
+[2021-04-15 13:35:12,315] [DEBUG] arpspoof: ARP session time out. Testing initiator 192.168.1.1 (08:00:27:a1:b6:e6).
+[2021-04-15 13:35:12,316] [DEBUG] arpspoof: add_ping_job(): Dispatching task ('08:00:27:a1:b6:e6', '192.168.1.1', 'new_arp_source')
+[2021-04-15 13:35:12,316] [DEBUG] arpspoof: Full cycle. Testing responder 192.168.1.3 (08:00:27:42:00:6f).
+[2021-04-15 13:35:12,326] [DEBUG] arpspoof: add_ping_job(): Dispatching task ('08:00:27:42:00:6f', '192.168.1.3', 'new_arp_source')
+[2021-04-15 13:35:12,326] [DEBUG] arpspoof: Skipping trusted host 192.168.1.3 (08:00:27:42:00:6f)
+[2021-04-15 13:35:12,326] [DEBUG] arpspoof: on_detect_new_arp_source(): Cleaning up task ('08:00:27:42:00:6f', '192.168.1.3', 'new_arp_source')
+[2021-04-15 13:35:12,328] [INFO] arpspoof: Adding 192.168.1.1 (08:00:27:a1:b6:e6) to trusted ARP table.
+[2021-04-15 13:35:12,328] [DEBUG] arpspoof: on_detect_new_arp_source(): Cleaning up task ('08:00:27:a1:b6:e6', '192.168.1.1', 'new_arp_source')
+[2021-04-15 13:35:12,768] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:35:12,768] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:35:13,786] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:35:13,786] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:35:14,796] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:35:14,796] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:36:00,137] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:00,138] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:00,138] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:01,149] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:01,150] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:01,150] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:02,159] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:02,160] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:02,160] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:03,170] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:03,171] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:03,171] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:04,180] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:04,181] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:04,181] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:05,349] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 -> 08:00:27:42:00:6f: Who has 192.168.1.3? Tell 192.168.1.1 (08:00:27:a1:b6:e6).
+[2021-04-15 13:36:05,349] [DEBUG] arpspoof: Source 192.168.1.1 has known hwaddr 08:00:27:a1:b6:e6 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 00:00:00:00:00:00)
+[2021-04-15 13:36:05,349] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:36:05,350] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 <- 08:00:27:42:00:6f: Reply to 192.168.1.1 (08:00:27:a1:b6:e6): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:36:05,351] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.1 has known hwaddr 08:00:27:a1:b6:e6 (got 08:00:27:a1:b6:e6)
+[2021-04-15 13:36:05,351] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:36:14,190] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:14,191] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:14,191] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:24,200] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:36:24,200] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:36:24,201] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:36:28,611] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:36:28,611] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:36:29,622] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:36:29,623] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:36:30,632] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:36:30,632] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:37:03,972] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 -> 08:00:27:42:00:6f: Who has 192.168.1.3? Tell 192.168.1.1 (08:00:27:a1:b6:e6).
+[2021-04-15 13:37:03,973] [DEBUG] arpspoof: Source 192.168.1.1 has known hwaddr 08:00:27:a1:b6:e6 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 00:00:00:00:00:00)
+[2021-04-15 13:37:03,973] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:37:03,974] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 <- 08:00:27:42:00:6f: Reply to 192.168.1.1 (08:00:27:a1:b6:e6): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:37:03,974] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.1 has known hwaddr 08:00:27:a1:b6:e6 (got 08:00:27:a1:b6:e6)
+[2021-04-15 13:37:03,974] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:37:28,156] [DEBUG] arpspoof: 08:00:27:33:ce:25 -> 08:00:27:42:00:6f: Who has 192.168.1.3? Tell 192.168.1.2 (08:00:27:33:ce:25).
+[2021-04-15 13:37:28,157] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:33:ce:25), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:37:28,157] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:37:28,158] [DEBUG] arpspoof: 08:00:27:33:ce:25 <- 08:00:27:42:00:6f: Reply to 192.168.1.2 (08:00:27:33:ce:25): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:37:28,159] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:33:ce:25)
+[2021-04-15 13:37:28,159] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:40:01,199] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:40:01,199] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:40:01,199] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:40:01,200] [DEBUG] arpspoof: 08:00:27:33:ce:25 -> ff:ff:ff:ff:ff:ff: Who has 192.168.1.3? Tell 192.168.1.2 (08:00:27:33:ce:25).
+[2021-04-15 13:40:01,201] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:33:ce:25), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 00:00:00:00:00:00)
+[2021-04-15 13:40:01,201] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:40:01,202] [DEBUG] arpspoof: 08:00:27:33:ce:25 <- 08:00:27:42:00:6f: Reply to 192.168.1.2 (08:00:27:33:ce:25): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:40:01,202] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:33:ce:25)
+[2021-04-15 13:40:01,202] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:40:02,209] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:40:02,209] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:40:02,209] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:40:03,219] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:40:03,219] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:40:03,220] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:40:04,230] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:40:04,230] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:40:04,230] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:40:05,240] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:40:05,241] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:40:05,241] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:40:06,244] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 -> 08:00:27:42:00:6f: Who has 192.168.1.3? Tell 192.168.1.1 (08:00:27:a1:b6:e6).
+[2021-04-15 13:40:06,245] [DEBUG] arpspoof: Source 192.168.1.1 has known hwaddr 08:00:27:a1:b6:e6 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 00:00:00:00:00:00)
+[2021-04-15 13:40:06,245] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:40:06,246] [DEBUG] arpspoof: 08:00:27:a1:b6:e6 <- 08:00:27:42:00:6f: Reply to 192.168.1.1 (08:00:27:a1:b6:e6): 192.168.1.3 is at 08:00:27:42:00:6f.
+[2021-04-15 13:40:06,246] [DEBUG] arpspoof: Source 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f), dest 192.168.1.1 has known hwaddr 08:00:27:a1:b6:e6 (got 08:00:27:a1:b6:e6)
+[2021-04-15 13:40:06,247] [DEBUG] arpspoof: Trusted traffic.
+[2021-04-15 13:40:15,251] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:a1:b6:e6.
+[2021-04-15 13:40:15,251] [DEBUG] arpspoof: Source 192.168.1.2 has known hwaddr 08:00:27:33:ce:25 (got 08:00:27:a1:b6:e6), dest 192.168.1.3 has known hwaddr 08:00:27:42:00:6f (got 08:00:27:42:00:6f)
+[2021-04-15 13:40:15,251] [WARNING] arpspoof: Contradicting ARP update found. Possible spoofing event.
+[2021-04-15 13:40:20,466] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:40:20,466] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:40:21,476] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:40:21,476] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+[2021-04-15 13:40:22,486] [DEBUG] arpspoof: 08:00:27:42:00:6f <- 08:00:27:a1:b6:e6: Reply to 192.168.1.3 (08:00:27:42:00:6f): 192.168.1.2 is at 08:00:27:33:ce:25.
+[2021-04-15 13:40:22,486] [WARNING] arpspoof: Inconsistent Ether source (08:00:27:a1:b6:e6) and ARP source (08:00:27:33:ce:25). Possible spoofing event.
+
+

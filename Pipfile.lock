@@ -1,0 +1,30 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "11f4a0f2bc8357228823a9094830f99fffd2c5396e2484993b7ae05a5fa31fb0"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.9"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "scapy": {
+            "git": "https://github.com/secdev/scapy.git",
+            "ref": "37afb3f2d613c9170fb34b22e1369353aedee78d"
+        }
+    },
+    "develop": {
+        "pyinstaller": {
+            "git": "https://github.com/pyinstaller/pyinstaller.git",
+            "ref": "58987255b40d4b917fa775f1f74bd3279108f418"
+        }
+    }
+}

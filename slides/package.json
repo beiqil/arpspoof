@@ -1,0 +1,15 @@
+{
+  "name": "cs4115-final-project-slides",
+  "version": "1.0.0",
+  "description": "CS4115 final project slides",
+  "main": "slides.rmd.md",
+  "scripts": {
+    "present": "reveal-md slides.rmd.md",
+    "print": "reveal-md slides.rmd.md --print slides.pdf"
+  },
+  "author": "Beiqi Li",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "reveal-md": "^5.0.0"
+  }
+}

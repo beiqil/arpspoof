@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scapy = {git = "https://github.com/secdev/scapy.git"}
+
+[dev-packages]
+pyinstaller = {git = "https://github.com/pyinstaller/pyinstaller.git"}
+
+[requires]
+python_version = "3.9"
